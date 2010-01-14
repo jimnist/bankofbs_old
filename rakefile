@@ -1,0 +1,58 @@
+##
+# tasks for maintaining and deploying this here jekyll site, yo
+#
+# adapted from http://davidwparker.com/2009/12/01/my-jekyll-rake-file/
+# but simplified. that has a more complicated example of what you might do
+# if you wanted slightly different functionality on dev and production, ie
+# not run Google Analytics on production.
+#
+#
+# this working relies on public key being set up for the user on the host
+
+USER_NAME = "git8"
+HOST_NAME = "jimnist.com"
+SITE_NAME = "bankofbs.org"
+
+desc "build and run the site locally"
+task :run => :build do
+  puts "running server locally"
+  system('jekyll --server')
+end
+
+desc "build _site locally"
+task :build => :delete do
+  puts "building _site"
+  system('compass')
+  system('jekyll')
+end
+
+desc "deploy #{SITE_NAME} to dreamhost"
+task :deploy => :rsync do
+  puts "dev site deployed"
+end
+
+desc "deletes _site"
+task :delete do
+  puts "deleting _site"
+  system('rm -r _site')
+  puts "deleting _site complete"
+end
+
+desc "rsync _site"
+task :rsync => :build do
+  system("rsync -avrz _site/ #{USER_NAME}@#{HOST_NAME}:#{SITE_NAME}")
+end
+
+namespace :dev do
+
+  desc "run compass watching for changes"
+  task :compass do
+    system("compass --watch")
+  end
+
+  desc "run jekyll server watching for changes"
+  task :jekyll do
+    system("jekyll --server --auto")
+  end
+
+end
