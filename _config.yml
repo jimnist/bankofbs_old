@@ -1,3 +1,6 @@
+##
+# configuration for bankofbs
+#
 destination: ./_site
 auto:        false
 lsi:         false
@@ -13,3 +16,4 @@ maruku:
 exclude:
   - config.rb
   - rakefile
+  - nbproject

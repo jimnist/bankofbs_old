@@ -1,13 +1,10 @@
 ##
-# tasks for maintaining and deploying this here jekyll site, yo
+# tasks for maintaining and deploying this jekyll site
 #
-# adapted from http://davidwparker.com/2009/12/01/my-jekyll-rake-file/
-# but simplified. that has a more complicated example of what you might do
-# if you wanted slightly different functionality on dev and production, ie
-# not run Google Analytics on production.
+# adapted and simplified from:
+#    http://davidwparker.com/2009/12/01/my-jekyll-rake-file/
 #
-#
-# this working relies on public key being set up for the user on the host
+# relies on public key being set up for the user on the host
 
 USER_NAME = "git8"
 HOST_NAME = "jimnist.com"

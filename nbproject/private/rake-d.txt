@@ -1,7 +1,0 @@
-build=build _site locally
-delete=deletes _site
-deploy=deploy bankofbs.org to dreamhost
-dev\:compass=run compass watching for changes
-dev\:jekyll=run jekyll server watching for changes
-rsync=rsync _site
-run=build and run the site locally
