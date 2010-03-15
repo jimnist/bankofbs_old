@@ -1,40 +1,51 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import blueprint/reset.sass
-// To configure blueprint, edit the partials/base.sass file.
-@import partials/base.sass
-// Import all the default blueprint modules so that we can access their mixins.
-@import blueprint
-// Import the non-default scaffolding module.
+// To configure blueprint, edit the partials/_base.sass file.
+@import partials/_base.sass
+@import blueprint/screen.sass
 @import blueprint/modules/scaffolding.sass
+@import compass/reset.sass
+@import compass/utilities.sass
 
-// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
-// +blueprint
++blueprint-typography("body.blueprint")
 
-//Recommended Blueprint configuration with scoping and semantic layout:
-+blueprint-typography("body.bp")
-+blueprint-scaffolding("body.bp")
-body.bp
-  +blueprint-utilities
-  +blueprint-debug
-  +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-form.bp
-  +blueprint-form
-
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.three-col
-  #container
+body.blueprint
+  +blueprint-scaffolding
+  .container
     +container
-  #header, #footer
-    +column(!blueprint_grid_columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    !sidebar_columns = floor(!blueprint_grid_columns / 3)
-    +column(!sidebar_columns)
-  #content
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
-    // true means it's the last column in the row
-    +column(!content_columns, true)
+
+body#default
+  .container
+    :border 1px solid #ccccc9
+  #header
+    +column(8, true)
+    :background-color #ccccc9
+    :height 117px
+    h1
+      :float left
+    img
+      :margin-left 27px
+    #site-actions
+      :float right
+      +horizontal-list
+  #leftsubheader
+    +column(4)
+    :height 23px
+    span
+  #rightsubheader
+    +column(4, true)
+    :height 23px
+    :text-align right
+  #navigation
+    +column(2)
+  #main-content
+    +column(6,true)
+    :min-height 444px
+  #footer
+    +column(8, true)
+    span
+      :padding 6px
+    #legalese
+      +column(4)
+    #subscribe
+      +column(4,true)
+      :text-align right
