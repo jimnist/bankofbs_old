@@ -1,7 +1,8 @@
 ##
 # configuration for bankofbs
 #
-destination: ./_site
+destination: ./public
+source:      ./jekyll
 auto:        false
 lsi:         false
 server_port: 4001
@@ -17,3 +18,4 @@ exclude:
   - config.rb
   - rakefile
   - nbproject
+  - 

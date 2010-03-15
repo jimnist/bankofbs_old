@@ -26,18 +26,20 @@ namespace :jekyll do
   end
 
   desc "build generated content locally"
-  task :build => :delete do
+#  task :build => :delete do
+
+  task :build do
     puts "building public site"
     system('compass')
     system('jekyll')
   end
 
-  desc "deletes public"
-  task :delete do
-    puts "deleting public"
-    system('rm -r public')
-    puts "deleting public complete"
-  end
+#  desc "deletes public"
+#  task :delete do
+#    puts "deleting public"
+#    system('rm -r public')
+#    puts "deleting public complete"
+#  end
 
   namespace :dev do
 
