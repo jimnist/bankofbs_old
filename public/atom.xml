@@ -3,7 +3,7 @@
   <title>sassywood.org</title>
  <link href="http://bankofbs.com/atom.xml" rel="self"/>
  <link href="http://bankofbs.com/"/>
- <updated>2010-03-16T10:11:26-05:00</updated>
+ <updated>2010-03-16T13:47:42-04:00</updated>
  <id>http://bankofbs.com/</id>
  <author>
    <name>fat kat</name>
@@ -15,7 +15,7 @@
   <entry>
     <title>Welcome</title>
     <link rel='alternate' type='text/html' href='http://bankofbs.com/2010/01/01/welcome.html'/>
-    <updated>2010-01-01T00:00:00-06:00</updated>
+    <updated>2010-01-01T00:00:00-05:00</updated>
     <id>http://bankofbs.com/2010/01/01/welcome</id>
     <content type="html"></content>
   </entry>
