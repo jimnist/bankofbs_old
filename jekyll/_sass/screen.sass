@@ -8,8 +8,12 @@
 
 +blueprint-typography("body.blueprint")
 
+// TODO: color names
+
+
 body.blueprint
   +blueprint-scaffolding
+  :background-color #ffc
   .container
     +container
 
@@ -17,11 +21,12 @@ body#default
   .container
     :border 1px solid #ccccc9
     :margin-bottom 14px
+    :background-color #fff
   #header
     +column(24, true)
     :background-color #ccffff
     :height 200px
-    :border-bottom 1px solid #333333
+    :border-bottom 1px solid #333
     h1
       :float left
     img

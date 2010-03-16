@@ -59,6 +59,7 @@ body.blueprint caption { background: #eee; }
 body.blueprint .quiet { color: #666666; }
 body.blueprint .loud { color: #111111; }
 
+body.blueprint { background-color: #ffc; }
 body.blueprint .box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
 body.blueprint div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
 body.blueprint div.colborder { padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee; }
@@ -67,8 +68,8 @@ body.blueprint hr.space { background: #dddddd; color: #dddddd; clear: both; floa
 body.blueprint .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
 body.blueprint .container { display: block; }
 
-body#default .container { border: 1px solid #ccccc9; margin-bottom: 14px; }
-body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333333; }
+body#default .container { border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
+body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; }
 * html body#default #header { overflow-x: hidden; }
 body#default #header h1 { float: left; }
 body#default #header img { margin-left: 285px; }
