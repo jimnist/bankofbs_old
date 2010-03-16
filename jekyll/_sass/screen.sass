@@ -1,40 +1,74 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import blueprint/reset.sass
-// To configure blueprint, edit the partials/base.sass file.
-@import partials/base.sass
-// Import all the default blueprint modules so that we can access their mixins.
-@import blueprint
-// Import the non-default scaffolding module.
+// To configure blueprint, edit the partials/_base.sass file.
+@import partials/_base.sass
+@import blueprint/screen.sass
 @import blueprint/modules/scaffolding.sass
+@import compass/reset.sass
+@import compass/utilities.sass
 
-// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
-// +blueprint
++blueprint-typography("body.blueprint")
 
-//Recommended Blueprint configuration with scoping and semantic layout:
-+blueprint-typography("body.bp")
-+blueprint-scaffolding("body.bp")
-body.bp
-  +blueprint-utilities
-  +blueprint-debug
-  +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-form.bp
-  +blueprint-form
+// TODO: color names
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.three-col
-  #container
+
+body.blueprint
+  +blueprint-scaffolding
+  :background-color #ffc
+  .container
     +container
-  #header, #footer
-    +column(!blueprint_grid_columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    !sidebar_columns = floor(!blueprint_grid_columns / 3)
-    +column(!sidebar_columns)
-  #content
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
-    // true means it's the last column in the row
-    +column(!content_columns, true)
+
+body#default
+  .container
+    :border 1px solid #ccccc9
+    :margin-bottom 14px
+    :background-color #fff
+  #header
+    +column(24, true)
+    :background-color #ccffff
+    :height 200px
+    :border-bottom 1px solid #333
+    h1
+      :float left
+    img
+      :margin-left 285px
+    #site-actions
+      :float right
+      +horizontal-list
+  #leftsubheader
+    +column(12)
+    :height 33px
+  #rightsubheader
+    +column(12, true)
+    :height 33px
+    :text-align right
+  #main-content
+    +column(16)
+    :min-height 444px
+    :border-right 1px solid #ccccc9
+    span
+      :padding-left 10px
+      :padding-right 10px
+  #one-blank
+    +column(4)
+  #one-content
+    +column(16)
+    :min-height 444px
+    :font-size 2em
+  #right-sidebar
+    +column(8)
+  #footer
+    +column(24, true)
+    :margin-top 6px
+    #contacto
+      +column(8)
+      a
+        :padding-left 10px
+    #legalese
+      +column(8)
+      :text-align center
+    #subscribe
+      +column(8,true)
+      :text-align right
+      span
+        :padding-right 10px
+

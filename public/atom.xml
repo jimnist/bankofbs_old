@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>sassywood.org</title>
+ <link href="http://bankofbs.com/atom.xml" rel="self"/>
+ <link href="http://bankofbs.com/"/>
+ <updated>2010-03-16T14:12:04-04:00</updated>
+ <id>http://bankofbs.com/</id>
+ <author>
+   <name>fat kat</name>
+   <email>fatkat@bankofbs.com</email>
+ </author>
+
+  
+
+  <entry>
+    <title>Welcome</title>
+    <link rel='alternate' type='text/html' href='http://bankofbs.com/2010/01/01/welcome.html'/>
+    <updated>2010-01-01T00:00:00-05:00</updated>
+    <id>http://bankofbs.com/2010/01/01/welcome</id>
+    <content type="html"></content>
+  </entry>
+  
+</feed>

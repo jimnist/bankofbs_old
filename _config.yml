@@ -1,0 +1,21 @@
+##
+# configuration for bankofbs
+#
+destination: ./public
+source:      ./jekyll
+auto:        false
+lsi:         false
+server_port: 4001
+pygments:    false
+markdown:    maruku
+permalink:   date
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_dir:    images/latex
+  png_url:    /images/latex
+exclude:
+  - config.rb
+  - rakefile
+  - nbproject
+  - 

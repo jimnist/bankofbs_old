@@ -1,4 +1,4 @@
+db/schema.rb
 .idea/
 nbproject/
-public/_site/
-jekyll/_sass/.sass-cache/
+jekyll/_sass/.sass-cache/*
