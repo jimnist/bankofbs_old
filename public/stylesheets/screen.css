@@ -67,28 +67,36 @@ body.blueprint hr.space { background: #dddddd; color: #dddddd; clear: both; floa
 body.blueprint .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
 body.blueprint .container { display: block; }
 
-body#default .container { border: 1px solid #ccccc9; }
-body#default #header { display: inline; float: left; margin-right: 0; width: 310px; background-color: #ccccc9; height: 117px; }
+body#default .container { border: 1px solid #ccccc9; margin-bottom: 14px; }
+body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333333; }
 * html body#default #header { overflow-x: hidden; }
 body#default #header h1 { float: left; }
-body#default #header img { margin-left: 27px; }
+body#default #header img { margin-left: 285px; }
 body#default #header #site-actions { float: right; margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; }
 body#default #header #site-actions { display: block; }
 body#default #header #site-actions li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
 body#default #header #site-actions li.first { padding-left: 0px; }
 body#default #header #site-actions li.last { padding-right: 0px; }
-body#default #leftsubheader { display: inline; float: left; margin-right: 10px; width: 150px; height: 23px; }
+body#default #leftsubheader { display: inline; float: left; margin-right: 10px; width: 470px; height: 33px; }
 * html body#default #leftsubheader { overflow-x: hidden; }
-body#default #rightsubheader { display: inline; float: left; margin-right: 0; width: 150px; height: 23px; text-align: right; }
+body#default #rightsubheader { display: inline; float: left; margin-right: 0; width: 470px; height: 33px; text-align: right; }
 * html body#default #rightsubheader { overflow-x: hidden; }
-body#default #navigation { display: inline; float: left; margin-right: 10px; width: 70px; }
-* html body#default #navigation { overflow-x: hidden; }
-body#default #main-content { display: inline; float: left; margin-right: 0; width: 230px; min-height: 444px; }
+body#default #main-content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; border-right: 1px solid #ccccc9; }
 * html body#default #main-content { overflow-x: hidden; }
-body#default #footer { display: inline; float: left; margin-right: 0; width: 310px; }
+body#default #main-content span { padding-left: 10px; padding-right: 10px; }
+body#default #one-blank { display: inline; float: left; margin-right: 10px; width: 150px; }
+* html body#default #one-blank { overflow-x: hidden; }
+body#default #one-content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; font-size: 2em; }
+* html body#default #one-content { overflow-x: hidden; }
+body#default #right-sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
+* html body#default #right-sidebar { overflow-x: hidden; }
+body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
 * html body#default #footer { overflow-x: hidden; }
-body#default #footer span { padding: 6px; }
-body#default #footer #legalese { display: inline; float: left; margin-right: 10px; width: 150px; }
+body#default #footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }
+* html body#default #footer #contacto { overflow-x: hidden; }
+body#default #footer #contacto a { padding-left: 10px; }
+body#default #footer #legalese { display: inline; float: left; margin-right: 10px; width: 310px; text-align: center; }
 * html body#default #footer #legalese { overflow-x: hidden; }
-body#default #footer #subscribe { display: inline; float: left; margin-right: 0; width: 150px; text-align: right; }
+body#default #footer #subscribe { display: inline; float: left; margin-right: 0; width: 310px; text-align: right; }
 * html body#default #footer #subscribe { overflow-x: hidden; }
+body#default #footer #subscribe span { padding-right: 10px; }

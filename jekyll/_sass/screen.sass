@@ -16,35 +16,54 @@ body.blueprint
 body#default
   .container
     :border 1px solid #ccccc9
+    :margin-bottom 14px
   #header
-    +column(8, true)
-    :background-color #ccccc9
-    :height 117px
+    +column(24, true)
+    :background-color #ccffff
+    :height 200px
+    :border-bottom 1px solid #333333
     h1
       :float left
     img
-      :margin-left 27px
+      :margin-left 285px
     #site-actions
       :float right
       +horizontal-list
   #leftsubheader
-    +column(4)
-    :height 23px
+    +column(12)
+    :height 33px
   #rightsubheader
-    +column(4, true)
-    :height 23px
+    +column(12, true)
+    :height 33px
     :text-align right
-  #navigation
-    +column(2)
   #main-content
-    +column(6,true)
+    +column(16)
     :min-height 444px
-  #footer
-    +column(8, true)
+    :border-right 1px solid #ccccc9
     span
-      :padding 6px
+      :padding-left 10px
+      :padding-right 10px
+  #one-blank
+    +column(4)
+  #one-content
+    +column(16)
+    :min-height 444px
+    :font-size 2em
+  #right-sidebar
+    +column(8)
+  #footer
+    +column(24, true)
+    :margin-top 6px
+    #contacto
+      +column(8)
+      a
+        :padding-left 10px
     #legalese
-      +column(4)
+      +column(8)
+      :text-align center
     #subscribe
-      +column(4,true)
+      +column(8,true)
       :text-align right
+      span
+        :padding-right 10px
+

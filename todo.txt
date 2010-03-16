@@ -1,0 +1,9 @@
+- check out feedburner
+- make posts
+- discus
+- poll
+- quitters form
+- links
+- main text (from txt file)
+- layout/logo
+- schwag
