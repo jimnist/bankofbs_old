@@ -86,9 +86,6 @@ body#default .content { display: inline; float: left; margin-right: 10px; width:
 * html body#default .content { overflow-x: hidden; }
 body#default #one-content { display: inline; float: right; position: relative; margin: 0 -160px 1.5em 160px; border-right: 1px solid #ccccc9; }
 body#default #one-content span { padding-left: 10px; padding-right: 10px; }
-body#default #one-blank { display: inline; float: left; margin-right: 10px; width: 150px; }
-* html body#default #one-blank { overflow-x: hidden; }
-body#default #main-content { font-size: 2em; }
 body#default #main-content .error-page { font-color: red; }
 body#default #right-sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
 * html body#default #right-sidebar { overflow-x: hidden; }

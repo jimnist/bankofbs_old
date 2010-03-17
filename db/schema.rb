@@ -9,6 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100315154559) do
+
+  create_table "pledges", :force => true do |t|
+    t.string   "name",       :limit => 200
+    t.string   "email",      :limit => 200
+    t.string   "state",      :limit => 2
+    t.float    "amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
