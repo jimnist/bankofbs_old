@@ -41,19 +41,21 @@ body#default
     +column(12, true)
     :height 33px
     :text-align right
-  #main-content
+  .content
     +column(16)
     :min-height 444px
+  #one-content
+    +push(4)
     :border-right 1px solid #ccccc9
     span
       :padding-left 10px
       :padding-right 10px
   #one-blank
     +column(4)
-  #one-content
-    +column(16)
-    :min-height 444px
+  #main-content
     :font-size 2em
+    .error-page
+      :font-color red
   #right-sidebar
     +column(8)
   #footer

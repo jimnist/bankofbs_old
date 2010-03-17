@@ -82,13 +82,14 @@ body#default #leftsubheader { display: inline; float: left; margin-right: 10px; 
 * html body#default #leftsubheader { overflow-x: hidden; }
 body#default #rightsubheader { display: inline; float: left; margin-right: 0; width: 470px; height: 33px; text-align: right; }
 * html body#default #rightsubheader { overflow-x: hidden; }
-body#default #main-content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; border-right: 1px solid #ccccc9; }
-* html body#default #main-content { overflow-x: hidden; }
-body#default #main-content span { padding-left: 10px; padding-right: 10px; }
+body#default .content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; }
+* html body#default .content { overflow-x: hidden; }
+body#default #one-content { display: inline; float: right; position: relative; margin: 0 -160px 1.5em 160px; border-right: 1px solid #ccccc9; }
+body#default #one-content span { padding-left: 10px; padding-right: 10px; }
 body#default #one-blank { display: inline; float: left; margin-right: 10px; width: 150px; }
 * html body#default #one-blank { overflow-x: hidden; }
-body#default #one-content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; font-size: 2em; }
-* html body#default #one-content { overflow-x: hidden; }
+body#default #main-content { font-size: 2em; }
+body#default #main-content .error-page { font-color: red; }
 body#default #right-sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
 * html body#default #right-sidebar { overflow-x: hidden; }
 body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
