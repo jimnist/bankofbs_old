@@ -84,11 +84,12 @@ body#default #rightsubheader { display: inline; float: left; margin-right: 0; wi
 * html body#default #rightsubheader { overflow-x: hidden; }
 body#default .content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; }
 * html body#default .content { overflow-x: hidden; }
-body#default #one-content { display: inline; float: right; position: relative; margin: 0 -160px 1.5em 160px; border-right: 1px solid #ccccc9; }
-body#default #one-content span { padding-left: 10px; padding-right: 10px; }
-body#default #main-content .error-page { font-color: red; }
-body#default #right-sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
-* html body#default #right-sidebar { overflow-x: hidden; }
+body#default #default-content { padding-left: 160px; }
+body#default #default-content .error-page { font-color: red; }
+body#default #index-content { padding-left: 40px; border-right: 1px solid #ccccc9; }
+body#default #index-content span { padding-left: 10px; padding-right: 10px; }
+body#default #sidebar { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 190px; }
+* html body#default #sidebar { overflow-x: hidden; }
 body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
 * html body#default #footer { overflow-x: hidden; }
 body#default #footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }

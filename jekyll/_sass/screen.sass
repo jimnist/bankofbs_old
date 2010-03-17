@@ -44,17 +44,19 @@ body#default
   .content
     +column(16)
     :min-height 444px
-  #one-content
-    +push(4)
+  #default-content
+    +prepend(4)
+    .error-page
+      :font-color red    
+  #index-content
+    +prepend(1)
     :border-right 1px solid #ccccc9
     span
       :padding-left 10px
       :padding-right 10px
-  #main-content
-    .error-page
-      :font-color red
-  #right-sidebar
-    +column(8)
+  #sidebar
+    +prepend(1)
+    +column(5)
   #footer
     +column(24, true)
     :margin-top 6px
