@@ -73,17 +73,16 @@ body#default #header { display: inline; float: left; margin-right: 0; width: 950
 * html body#default #header { overflow-x: hidden; }
 body#default #header h1 { float: left; }
 body#default #header img { margin-left: 285px; }
-body#default .content { min-height: 444px; }
-body#default .default-content { display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; }
-* html body#default .default-content { overflow-x: hidden; }
-body#default .default-content .error-page { font-color: red; }
-body#default .goal-content { display: inline; float: left; margin-right: 10px; width: 590px; padding-left: 200px; }
-* html body#default .goal-content { overflow-x: hidden; }
-body#default .index-content { display: inline; float: left; margin-right: 10px; width: 550px; padding-left: 40px; }
-* html body#default .index-content { overflow-x: hidden; }
-body#default .index-content span { padding-left: 10px; padding-right: 10px; }
-body#default #sidebar { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 270px; }
-* html body#default #sidebar { overflow-x: hidden; }
+body#default #content-wrapper { display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
+* html body#default #content-wrapper { overflow-x: hidden; }
+body#default #content { display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 120px; }
+* html body#default #content { overflow-x: hidden; }
+body#default #index-left { display: inline; float: left; margin-right: 10px; width: 550px; }
+* html body#default #index-left { overflow-x: hidden; }
+body#default #index-right { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 270px; }
+* html body#default #index-right { overflow-x: hidden; }
+body#default .one-goal { padding-left: 40px; }
+body#default .error-text { margin-top: 44px; font-color: red; }
 body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
 * html body#default #footer { overflow-x: hidden; }
 body#default #footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }

@@ -32,25 +32,26 @@ body#default
       :float left
     img
       :margin-left 285px
-  .content
-    :min-height 444px
-  .default-content  
-    +column(16)
-    +prepend(4)
-    .error-page
-      :font-color red
-  .goal-content
-    +column(15)
-    +prepend(5)
-  .index-content
-    +column(14)
+  // this is a container around all content.
+  #content-wrapper
+    +column(22)
     +prepend(1)
-    span
-      :padding-left 10px
-      :padding-right 10px
-  #sidebar
+    :min-height 444px
+  // containers for left and right sides of index page that fit
+  // within the content div
+  #content
+    +column(16)
+    +prepend(3)
+  #index-left
+    +column(14)
+  #index-right
     +prepend(1)
     +column(7)
+  .one-goal
+    +prepend(1)
+  .error-text
+    :margin-top 44px
+    :font-color red    
   #footer
     +column(24, true)
     :margin-top 6px
