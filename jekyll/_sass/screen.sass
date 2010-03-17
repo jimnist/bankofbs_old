@@ -27,36 +27,30 @@ body#default
     :background-color #ccffff
     :height 200px
     :border-bottom 1px solid #333
+    :margin-bottom 44px
     h1
       :float left
     img
       :margin-left 285px
-    #site-actions
-      :float right
-      +horizontal-list
-  #leftsubheader
-    +column(12)
-    :height 33px
-  #rightsubheader
-    +column(12, true)
-    :height 33px
-    :text-align right
   .content
-    +column(16)
     :min-height 444px
-  #default-content
+  .default-content  
+    +column(16)
     +prepend(4)
     .error-page
-      :font-color red    
-  #index-content
+      :font-color red
+  .goal-content
+    +column(15)
+    +prepend(5)
+  .index-content
+    +column(14)
     +prepend(1)
-    :border-right 1px solid #ccccc9
     span
       :padding-left 10px
       :padding-right 10px
   #sidebar
     +prepend(1)
-    +column(5)
+    +column(7)
   #footer
     +column(24, true)
     :margin-top 6px

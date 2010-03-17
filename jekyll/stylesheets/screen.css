@@ -69,26 +69,20 @@ body.blueprint .container { width: 950px; margin: 0 auto; overflow: hidden; disp
 body.blueprint .container { display: block; }
 
 body#default .container { border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
-body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; }
+body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; margin-bottom: 44px; }
 * html body#default #header { overflow-x: hidden; }
 body#default #header h1 { float: left; }
 body#default #header img { margin-left: 285px; }
-body#default #header #site-actions { float: right; margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; }
-body#default #header #site-actions { display: block; }
-body#default #header #site-actions li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
-body#default #header #site-actions li.first { padding-left: 0px; }
-body#default #header #site-actions li.last { padding-right: 0px; }
-body#default #leftsubheader { display: inline; float: left; margin-right: 10px; width: 470px; height: 33px; }
-* html body#default #leftsubheader { overflow-x: hidden; }
-body#default #rightsubheader { display: inline; float: left; margin-right: 0; width: 470px; height: 33px; text-align: right; }
-* html body#default #rightsubheader { overflow-x: hidden; }
-body#default .content { display: inline; float: left; margin-right: 10px; width: 630px; min-height: 444px; }
-* html body#default .content { overflow-x: hidden; }
-body#default #default-content { padding-left: 160px; }
-body#default #default-content .error-page { font-color: red; }
-body#default #index-content { padding-left: 40px; border-right: 1px solid #ccccc9; }
-body#default #index-content span { padding-left: 10px; padding-right: 10px; }
-body#default #sidebar { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 190px; }
+body#default .content { min-height: 444px; }
+body#default .default-content { display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; }
+* html body#default .default-content { overflow-x: hidden; }
+body#default .default-content .error-page { font-color: red; }
+body#default .goal-content { display: inline; float: left; margin-right: 10px; width: 590px; padding-left: 200px; }
+* html body#default .goal-content { overflow-x: hidden; }
+body#default .index-content { display: inline; float: left; margin-right: 10px; width: 550px; padding-left: 40px; }
+* html body#default .index-content { overflow-x: hidden; }
+body#default .index-content span { padding-left: 10px; padding-right: 10px; }
+body#default #sidebar { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 270px; }
 * html body#default #sidebar { overflow-x: hidden; }
 body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
 * html body#default #footer { overflow-x: hidden; }
