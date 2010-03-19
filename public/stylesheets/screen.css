@@ -59,31 +59,40 @@ body.blueprint caption { background: #eee; }
 body.blueprint .quiet { color: #666666; }
 body.blueprint .loud { color: #111111; }
 
-body.blueprint { background-color: #ffc; }
-body.blueprint .box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
-body.blueprint div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
-body.blueprint div.colborder { padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee; }
-body.blueprint hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; }
-body.blueprint hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
-body.blueprint .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
-body.blueprint .container { display: block; }
 
-body#default .container { border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
-body#default #header { display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; margin-bottom: 44px; }
+body#default { background-color: #ffc; }
+body#default .box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
+body#default div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
+body#default div.colborder { padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee; }
+body#default hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; }
+body#default hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
+body#default a { text-decoration: none; }
+body#default a:hover { color: #00f; font-style: bolder; }
+body#default .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
+body#default .container { display: block; }
+body#default #header { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; margin-bottom: 44px; }
+body#default #header { display: block; }
 * html body#default #header { overflow-x: hidden; }
-body#default #header h1 { float: left; }
-body#default #header img { margin-left: 285px; }
-body#default #content-wrapper { display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
+body#default #header .quote { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 190px; text-align: center; }
+* html body#default #header .quote { overflow-x: hidden; }
+body#default #header .quote span { margin-top: 66px; font-style: italic; display: block; }
+body#default #header .logo { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 470px; }
+* html body#default #header .logo { overflow-x: hidden; }
+body#default #header .logo img { z-index: 99; overflow: visible; position: absolute; margin-left: 1px; }
+body#default #content-wrapper { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
+body#default #content-wrapper { display: block; }
 * html body#default #content-wrapper { overflow-x: hidden; }
 body#default #content { display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 120px; }
 * html body#default #content { overflow-x: hidden; }
-body#default #index-left { display: inline; float: left; margin-right: 10px; width: 550px; }
+body#default #index-left { display: inline; float: left; margin-right: 10px; width: 550px; height: 100%; }
 * html body#default #index-left { overflow-x: hidden; }
-body#default #index-right { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 270px; }
+body#default #index-right { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 270px; }
 * html body#default #index-right { overflow-x: hidden; }
+body#default #index-right .sucks { margin-bottom: 123px; }
+body#default #index-right .sucks img { margin-top: -88px; margin-left: 88px; z-index: 99; overflow: visible; position: absolute; }
 body#default .one-goal { padding-left: 40px; }
 body#default .error-text { margin-top: 44px; font-color: red; }
-body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; }
+body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; margin-bottom: 6px; }
 * html body#default #footer { overflow-x: hidden; }
 body#default #footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }
 * html body#default #footer #contacto { overflow-x: hidden; }

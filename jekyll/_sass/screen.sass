@@ -12,28 +12,46 @@
 
 
 body.blueprint
-  +blueprint-scaffolding
-  :background-color #ffc
-  .container
-    +container
 
 body#default
+  +blueprint-scaffolding
+  :background-color #ffc
+  a
+    :text-decoration none
+    &:hover
+      :color #00f
+      :font-style bolder
   .container
+    +container
     :border 1px solid #ccccc9
     :margin-bottom 14px
     :background-color #fff
   #header
+    +container
     +column(24, true)
     :background-color #ccffff
     :height 200px
     :border-bottom 1px solid #333
     :margin-bottom 44px
-    h1
-      :float left
-    img
-      :margin-left 285px
+    .quote
+      +prepend(1)
+      +column(5)
+      :text-align center
+      span
+        :margin-top 66px
+        :font-style italic
+        :display block
+    .logo
+      +prepend(1)
+      +column(12, true)
+      img
+        :z-index  99
+        :overflow visible
+        :position absolute
+        :margin-left 1px
   // this is a container around all content.
   #content-wrapper
+    +container
     +column(22)
     +prepend(1)
     :min-height 444px
@@ -44,9 +62,18 @@ body#default
     +prepend(3)
   #index-left
     +column(14)
+    :height 100%
   #index-right
     +prepend(1)
-    +column(7)
+    +column(7, true)
+    .sucks
+      :margin-bottom 123px
+      img
+        :margin-top -88px
+        :margin-left 88px
+        :z-index  99
+        :overflow visible
+        :position absolute
   .one-goal
     +prepend(1)
   .error-text
@@ -55,6 +82,7 @@ body#default
   #footer
     +column(24, true)
     :margin-top 6px
+    :margin-bottom 6px
     #contacto
       +column(8)
       a
