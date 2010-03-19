@@ -27,25 +27,34 @@ body#default
     +container
     +column(24, true)
     :background-color #ccffff
-    :height 200px
+    :height 195px
     :border-bottom 1px solid #333
     :margin-bottom 44px
-    .quote
-      +prepend(1)
+    .foreclosed
       +column(5)
-      :text-align center
-      span
-        :margin-top 66px
-        :font-style italic
-        :display block
+      :padding-top 123px
+      img
+        :margin-left 11px
     .logo
       +prepend(1)
-      +column(12, true)
+      +column(9)
       img
         :z-index  99
         :overflow visible
         :position absolute
-        :margin-left 1px
+        :margin-left 1px          
+    .quote
+      +prepend(12)
+      +column(5, true)
+      :text-align center
+      span
+        :margin-top 46px
+        :font-style italic
+        :display block
+      .home-logo
+        :text-align left
+        :margin-top 33px
+
   // this is a container around all content.
   #content-wrapper
     +container

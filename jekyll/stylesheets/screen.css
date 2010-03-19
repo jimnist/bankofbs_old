@@ -64,15 +64,19 @@ body#default a { text-decoration: none; }
 body#default a:hover { color: #00f; font-style: bolder; }
 body#default .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
 body#default .container { display: block; }
-body#default #header { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 200px; border-bottom: 1px solid #333; margin-bottom: 44px; }
+body#default #header { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 195px; border-bottom: 1px solid #333; margin-bottom: 44px; }
 body#default #header { display: block; }
 * html body#default #header { overflow-x: hidden; }
-body#default #header .quote { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 190px; text-align: center; }
-* html body#default #header .quote { overflow-x: hidden; }
-body#default #header .quote span { margin-top: 66px; font-style: italic; display: block; }
-body#default #header .logo { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 470px; }
+body#default #header .foreclosed { display: inline; float: left; margin-right: 10px; width: 190px; padding-top: 123px; }
+* html body#default #header .foreclosed { overflow-x: hidden; }
+body#default #header .foreclosed img { margin-left: 11px; }
+body#default #header .logo { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 350px; }
 * html body#default #header .logo { overflow-x: hidden; }
 body#default #header .logo img { z-index: 99; overflow: visible; position: absolute; margin-left: 1px; }
+body#default #header .quote { padding-left: 480px; display: inline; float: left; margin-right: 0; width: 190px; text-align: center; }
+* html body#default #header .quote { overflow-x: hidden; }
+body#default #header .quote span { margin-top: 46px; font-style: italic; display: block; }
+body#default #header .quote .home-logo { text-align: left; margin-top: 33px; }
 body#default #content-wrapper { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
 body#default #content-wrapper { display: block; }
 * html body#default #content-wrapper { overflow-x: hidden; }
