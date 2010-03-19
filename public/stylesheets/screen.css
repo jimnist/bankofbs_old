@@ -59,13 +59,7 @@ body.blueprint caption { background: #eee; }
 body.blueprint .quiet { color: #666666; }
 body.blueprint .loud { color: #111111; }
 
-
 body#default { background-color: #ffc; }
-body#default .box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
-body#default div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
-body#default div.colborder { padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee; }
-body#default hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; }
-body#default hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
 body#default a { text-decoration: none; }
 body#default a:hover { color: #00f; font-style: bolder; }
 body#default .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
@@ -86,10 +80,25 @@ body#default #content { display: inline; float: left; margin-right: 10px; width:
 * html body#default #content { overflow-x: hidden; }
 body#default #index-left { display: inline; float: left; margin-right: 10px; width: 550px; height: 100%; }
 * html body#default #index-left { overflow-x: hidden; }
+body#default #index-left #announce { margin-top: 44px; }
+body#default #index-left #announce label { font-weight: bold; }
+body#default #index-left #announce fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
+body#default #index-left #announce legend { font-weight: bold; font-size: 1.2em; }
+body#default #index-left #announce input.text, body#default #index-left #announce input.title, body#default #index-left #announce input[type=text] { margin: 0.5em 0; background-color: #fff; padding: 5px; }
+body#default #index-left #announce input.title { font-size: 1.5em; }
+body#default #index-left #announce input[type=checkbox], body#default #index-left #announce input.checkbox, body#default #index-left #announce input[type=radio], body#default #index-left #announce input.radio { position: relative; top: 0.25em; }
+body#default #index-left #announce textarea { margin: 0.5em 0; padding: 5px; }
+body#default #index-left #announce select { margin: 0.5em 0; }
+body#default #index-left #announce fieldset { border: 1px solid #cccccc; }
+body#default #index-left #announce input.text, body#default #index-left #announce input.title, body#default #index-left #announce textarea, body#default #index-left #announce select { border: 1px solid #bbbbbb; }
+body#default #index-left #announce input.text:focus, body#default #index-left #announce input.title:focus, body#default #index-left #announce textarea:focus, body#default #index-left #announce select:focus { border: 1px solid #666666; }
+body#default #index-left #announce input.text, body#default #index-left #announce input.title { width: 300px; }
+body#default #index-left #announce textarea { width: 390px; height: 250px; }
 body#default #index-right { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 270px; }
 * html body#default #index-right { overflow-x: hidden; }
 body#default #index-right .sucks { margin-bottom: 123px; }
 body#default #index-right .sucks img { margin-top: -88px; margin-left: 88px; z-index: 99; overflow: visible; position: absolute; }
+body#default #index-right #right-stuff { margin-top: 94px; }
 body#default .one-goal { padding-left: 40px; }
 body#default .error-text { margin-top: 44px; font-color: red; }
 body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; margin-bottom: 6px; }

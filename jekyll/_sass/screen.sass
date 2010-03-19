@@ -3,6 +3,7 @@
 @import partials/_base.sass
 @import blueprint/screen.sass
 @import blueprint/modules/scaffolding.sass
+@import blueprint/modules/form.sass
 @import compass/reset.sass
 @import compass/utilities.sass
 
@@ -10,11 +11,7 @@
 
 // TODO: color names
 
-
-body.blueprint
-
 body#default
-  +blueprint-scaffolding
   :background-color #ffc
   a
     :text-decoration none
@@ -63,6 +60,9 @@ body#default
   #index-left
     +column(14)
     :height 100%
+    #announce
+      +blueprint-form
+      :margin-top 44px
   #index-right
     +prepend(1)
     +column(7, true)
@@ -74,6 +74,8 @@ body#default
         :z-index  99
         :overflow visible
         :position absolute
+    #right-stuff
+      :margin-top 94px
   .one-goal
     +prepend(1)
   .error-text
