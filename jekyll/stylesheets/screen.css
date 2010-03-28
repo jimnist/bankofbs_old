@@ -16,50 +16,7 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
 img a { border: none; }
 
-body.blueprint { line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #333333; font-size: 75%; }
-body.blueprint h1 { font-weight: normal; color: #222222; font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
-body.blueprint h1 img { margin: 0; }
-body.blueprint h2 { font-weight: normal; color: #222222; font-size: 2em; margin-bottom: 0.75em; }
-body.blueprint h3 { font-weight: normal; color: #222222; font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
-body.blueprint h4 { font-weight: normal; color: #222222; font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-body.blueprint h5 { font-weight: normal; color: #222222; font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
-body.blueprint h6 { font-weight: normal; color: #222222; font-size: 1em; font-weight: bold; }
-body.blueprint h2 img, body.blueprint h3 img, body.blueprint h4 img, body.blueprint h5 img, body.blueprint h6 img { margin: 0; }
-body.blueprint p { margin: 0 0 1.5em; }
-body.blueprint p img.left { display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
-body.blueprint p img.right { display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0; }
-body.blueprint a { text-decoration: underline; color: #000099; }
-body.blueprint a:visited { color: #000066; }
-body.blueprint a:focus { color: black; }
-body.blueprint a:hover { color: black; }
-body.blueprint a:active { color: #cc0099; }
-body.blueprint blockquote { margin: 1.5em; color: #666; font-style: italic; }
-body.blueprint strong { font-weight: bold; }
-body.blueprint em { font-style: italic; }
-body.blueprint dfn { font-style: italic; font-weight: bold; }
-body.blueprint sup, body.blueprint sub { line-height: 0; }
-body.blueprint abbr, body.blueprint acronym { border-bottom: 1px dotted #666; }
-body.blueprint address { margin: 0 0 1.5em; font-style: italic; }
-body.blueprint del { color: #666; }
-body.blueprint pre { margin: 1.5em 0; white-space: pre; }
-body.blueprint pre, body.blueprint code, body.blueprint tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
-body.blueprint li ul, body.blueprint li ol { margin: 0 1.5em; }
-body.blueprint ul { margin: 0 1.5em 1.5em 1.5em; list-style-type: disc; }
-body.blueprint ol { margin: 0 1.5em 1.5em 1.5em; list-style-type: decimal; }
-body.blueprint dl { margin: 0 0 1.5em 0; }
-body.blueprint dl dt { font-weight: bold; }
-body.blueprint dd { margin-left: 1.5em; }
-body.blueprint table { margin-bottom: 1.4em; width: 100%; }
-body.blueprint th { font-weight: bold; }
-body.blueprint thead th { background: #c3d9ff; }
-body.blueprint th, body.blueprint td, body.blueprint caption { padding: 4px 10px 4px 5px; }
-body.blueprint tr.even td { background: #e5ecf9; }
-body.blueprint tfoot { font-style: italic; }
-body.blueprint caption { background: #eee; }
-body.blueprint .quiet { color: #666666; }
-body.blueprint .loud { color: #111111; }
-
-body#default { background-color: #ffc; }
+body#default { background-color: #ffc; font-family: Verdana, Arial, sans-serif; font-size: 14px; line-height: 18px; }
 body#default a { text-decoration: none; }
 body#default a:hover { color: #00f; font-style: bolder; }
 body#default .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }

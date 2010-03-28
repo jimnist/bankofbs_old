@@ -1,18 +1,22 @@
 // This import applies a global reset to any page that imports this stylesheet.
 // To configure blueprint, edit the partials/_base.sass file.
 @import partials/_base.sass
+@import yui/modules/fonts.sass
 @import blueprint/screen.sass
 @import blueprint/modules/scaffolding.sass
 @import blueprint/modules/form.sass
 @import compass/reset.sass
 @import compass/utilities.sass
 
-+blueprint-typography("body.blueprint")
+//+blueprint-typography("body.blueprint")
 
 // TODO: color names
 
 body#default
   :background-color #ffc
+  :font-family Verdana, Arial, sans-serif
+  :font-size 14px
+  :line-height 18px
   a
     :text-decoration none
     &:hover
