@@ -22,90 +22,116 @@ body#default
     &:hover
       :color #00f
       :font-style bolder
-  .container
-    +container
-    :border 1px solid #ccccc9
-    :margin-bottom 14px
-    :background-color #fff
-    
-  #header
-    +container
-    +column(24, true)
-    :background-color #ccffff
-    :height 155px
-    :border-bottom 1px solid #333
-    :margin-bottom 44px
-    .foreclosed
-      +column(5)
-      :padding-top 80px
-      img
-        :margin-left 11px
-    .logo
-      +prepend(1)
-      +column(9)
-      img
-        :z-index  99
-        :overflow visible
-        :position absolute
-        :margin-left 83px          
-    .quote
-      +prepend(12)
-      +column(5, true)
-      :text-align center
-      span
-        :margin-top 46px
-        :font-style italic
-        :display block
 
-  // this is a container around all content.
-  #content-wrapper
-    +container
-    +column(22)
-    +prepend(1)
-    :min-height 444px
-  // containers for left and right sides of index page that fit
-  // within the content div
-  #content
-    +column(16)
-    +prepend(3)
-  #index-left
-    +column(14)
-    :height 100%
-    #announce
-      +blueprint-form
-      :margin-top 44px
-  #index-right
-    +prepend(1)
-    +column(7, true)
-    .sucks
-      :margin-bottom 123px
-      img
-        :margin-top -88px
-        :margin-left 88px
-        :z-index  99
-        :overflow visible
-        :position absolute
-    #right-stuff
-      :margin-top 94px
-  .one-goal
-    +prepend(1)
-  .error-text
+.container
+  +container
+  :border 1px solid #ccccc9
+  :margin-bottom 14px
+  :background-color #fff
+
+#header
+  +column(24, true)
+  :height 144px  
+  :background-color #ccffff
+  :border-bottom 1px solid #333
+  :margin-bottom 44px
+  img
+    :z-index  99
+    :overflow visible
+    :position absolute
+
+.foreclosed
+  +column(2)
+  :padding-top 112px
+  img
+    :margin-left -11px
+
+.message
+  +column(6)
+  :padding-top 6px
+  img
+    :margin-left -11px
+
+.logo
+  +column(8)
+//  img
+//    :margin-left 83px
+
+.quote
+  +column(5)
+  :text-align center
+  :padding-top 18px
+  span
+    :margin-top 30px
+    :font-style italic
+    :display block
+
+.sucks
+  +column(2, true)
+  img
     :margin-top 44px
-    :font-color red    
-  #footer
-    +column(24, true)
-    :margin-top 6px
-    :margin-bottom 6px
-    #contacto
-      +column(8)
-      a
-        :padding-left 10px
-    #legalese
-      +column(8)
+    :margin-left 9px
+
+// this is a container around all content.
+#content
+  +column(22)
+  +prepend(1)
+  :min-height 444px
+// containers for left and right sides of index page that fit
+// within the content div
+
+#index-left
+  +column(14)
+  :height 100%
+  #announce
+    +blueprint-form
+    :margin-top 44px
+  div
+    :margin-bottom 11px
+#index-right
+  +prepend(1)
+  +column(7, true)
+  #right-stuff
+    :margin-top 94px
+    :margin-bottom 11px
+
+  #check-back
+    :margin-bottom 44px
+
+  #freee
+    :border 1px solid #ccc
+    :padding 4px
+    :font-size .8em
+    td
       :text-align center
-    #subscribe
-      +column(8,true)
-      :text-align right
-      span
-        :padding-right 10px
+    h4
+      :font-weight bold
+      :font-size 2em
+      :padding-top 3px
+      :padding-bottom 3px
+    .freee-link
+      :text-align left
+.one-goal
+  +prepend(1)
+.error-text
+  :margin-top 44px
+  :font-color red
+
+#footer
+  +column(24, true)
+  :margin-top 6px
+  :margin-bottom 6px
+  :font-size .8em
+  #contacto
+    +column(8)
+    a
+      :padding-left 10px
+  #legalese
+    +column(8)
+    :text-align center
+  #subscribe
+    +column(8,true)
+    :text-align right
+    span
+      :padding-right 10px
 

@@ -19,55 +19,74 @@ img a { border: none; }
 body#default { background-color: #ffc; font-family: Verdana, Arial, sans-serif; font-size: 14px; line-height: 18px; }
 body#default a { text-decoration: none; }
 body#default a:hover { color: #00f; font-style: bolder; }
-body#default .container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
-body#default .container { display: block; }
-body#default #header { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 0; width: 950px; background-color: #ccffff; height: 155px; border-bottom: 1px solid #333; margin-bottom: 44px; }
-body#default #header { display: block; }
-* html body#default #header { overflow-x: hidden; }
-body#default #header .foreclosed { display: inline; float: left; margin-right: 10px; width: 190px; padding-top: 80px; }
-* html body#default #header .foreclosed { overflow-x: hidden; }
-body#default #header .foreclosed img { margin-left: 11px; }
-body#default #header .logo { padding-left: 40px; display: inline; float: left; margin-right: 10px; width: 350px; }
-* html body#default #header .logo { overflow-x: hidden; }
-body#default #header .logo img { z-index: 99; overflow: visible; position: absolute; margin-left: 83px; }
-body#default #header .quote { padding-left: 480px; display: inline; float: left; margin-right: 0; width: 190px; text-align: center; }
-* html body#default #header .quote { overflow-x: hidden; }
-body#default #header .quote span { margin-top: 46px; font-style: italic; display: block; }
-body#default #content-wrapper { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
-body#default #content-wrapper { display: block; }
-* html body#default #content-wrapper { overflow-x: hidden; }
-body#default #content { display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 120px; }
-* html body#default #content { overflow-x: hidden; }
-body#default #index-left { display: inline; float: left; margin-right: 10px; width: 550px; height: 100%; }
-* html body#default #index-left { overflow-x: hidden; }
-body#default #index-left #announce { margin-top: 44px; }
-body#default #index-left #announce label { font-weight: bold; }
-body#default #index-left #announce fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
-body#default #index-left #announce legend { font-weight: bold; font-size: 1.2em; }
-body#default #index-left #announce input.text, body#default #index-left #announce input.title, body#default #index-left #announce input[type=text] { margin: 0.5em 0; background-color: #fff; padding: 5px; }
-body#default #index-left #announce input.title { font-size: 1.5em; }
-body#default #index-left #announce input[type=checkbox], body#default #index-left #announce input.checkbox, body#default #index-left #announce input[type=radio], body#default #index-left #announce input.radio { position: relative; top: 0.25em; }
-body#default #index-left #announce textarea { margin: 0.5em 0; padding: 5px; }
-body#default #index-left #announce select { margin: 0.5em 0; }
-body#default #index-left #announce fieldset { border: 1px solid #cccccc; }
-body#default #index-left #announce input.text, body#default #index-left #announce input.title, body#default #index-left #announce textarea, body#default #index-left #announce select { border: 1px solid #bbbbbb; }
-body#default #index-left #announce input.text:focus, body#default #index-left #announce input.title:focus, body#default #index-left #announce textarea:focus, body#default #index-left #announce select:focus { border: 1px solid #666666; }
-body#default #index-left #announce input.text, body#default #index-left #announce input.title { width: 300px; }
-body#default #index-left #announce textarea { width: 390px; height: 250px; }
-body#default #index-right { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 270px; }
-* html body#default #index-right { overflow-x: hidden; }
-body#default #index-right .sucks { margin-bottom: 123px; }
-body#default #index-right .sucks img { margin-top: -88px; margin-left: 88px; z-index: 99; overflow: visible; position: absolute; }
-body#default #index-right #right-stuff { margin-top: 94px; }
-body#default .one-goal { padding-left: 40px; }
-body#default .error-text { margin-top: 44px; font-color: red; }
-body#default #footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; margin-bottom: 6px; }
-* html body#default #footer { overflow-x: hidden; }
-body#default #footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }
-* html body#default #footer #contacto { overflow-x: hidden; }
-body#default #footer #contacto a { padding-left: 10px; }
-body#default #footer #legalese { display: inline; float: left; margin-right: 10px; width: 310px; text-align: center; }
-* html body#default #footer #legalese { overflow-x: hidden; }
-body#default #footer #subscribe { display: inline; float: left; margin-right: 0; width: 310px; text-align: right; }
-* html body#default #footer #subscribe { overflow-x: hidden; }
-body#default #footer #subscribe span { padding-right: 10px; }
+
+.container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; border: 1px solid #ccccc9; margin-bottom: 14px; background-color: #fff; }
+.container { display: block; }
+
+#header { display: inline; float: left; margin-right: 0; width: 950px; height: 144px; background-color: #ccffff; border-bottom: 1px solid #333; margin-bottom: 44px; }
+* html #header { overflow-x: hidden; }
+#header img { z-index: 99; overflow: visible; position: absolute; }
+
+.foreclosed { display: inline; float: left; margin-right: 10px; width: 70px; padding-top: 112px; }
+* html .foreclosed { overflow-x: hidden; }
+.foreclosed img { margin-left: -11px; }
+
+.message { display: inline; float: left; margin-right: 10px; width: 230px; padding-top: 6px; }
+* html .message { overflow-x: hidden; }
+.message img { margin-left: -11px; }
+
+.logo { display: inline; float: left; margin-right: 10px; width: 310px; }
+* html .logo { overflow-x: hidden; }
+
+.quote { display: inline; float: left; margin-right: 10px; width: 190px; text-align: center; padding-top: 18px; }
+* html .quote { overflow-x: hidden; }
+.quote span { margin-top: 30px; font-style: italic; display: block; }
+
+.sucks { display: inline; float: left; margin-right: 0; width: 70px; }
+* html .sucks { overflow-x: hidden; }
+.sucks img { margin-top: 44px; margin-left: 9px; }
+
+#content { display: inline; float: left; margin-right: 10px; width: 870px; padding-left: 40px; min-height: 444px; }
+* html #content { overflow-x: hidden; }
+
+#index-left { display: inline; float: left; margin-right: 10px; width: 550px; height: 100%; }
+* html #index-left { overflow-x: hidden; }
+#index-left #announce { margin-top: 44px; }
+#index-left #announce label { font-weight: bold; }
+#index-left #announce fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
+#index-left #announce legend { font-weight: bold; font-size: 1.2em; }
+#index-left #announce input.text, #index-left #announce input.title, #index-left #announce input[type=text] { margin: 0.5em 0; background-color: #fff; padding: 5px; }
+#index-left #announce input.title { font-size: 1.5em; }
+#index-left #announce input[type=checkbox], #index-left #announce input.checkbox, #index-left #announce input[type=radio], #index-left #announce input.radio { position: relative; top: 0.25em; }
+#index-left #announce textarea { margin: 0.5em 0; padding: 5px; }
+#index-left #announce select { margin: 0.5em 0; }
+#index-left #announce fieldset { border: 1px solid #cccccc; }
+#index-left #announce input.text, #index-left #announce input.title, #index-left #announce textarea, #index-left #announce select { border: 1px solid #bbbbbb; }
+#index-left #announce input.text:focus, #index-left #announce input.title:focus, #index-left #announce textarea:focus, #index-left #announce select:focus { border: 1px solid #666666; }
+#index-left #announce input.text, #index-left #announce input.title { width: 300px; }
+#index-left #announce textarea { width: 390px; height: 250px; }
+#index-left div { margin-bottom: 11px; }
+
+#index-right { padding-left: 40px; display: inline; float: left; margin-right: 0; width: 270px; }
+* html #index-right { overflow-x: hidden; }
+#index-right #right-stuff { margin-top: 94px; margin-bottom: 11px; }
+#index-right #check-back { margin-bottom: 44px; }
+#index-right #freee { border: 1px solid #ccc; padding: 4px; font-size: .8em; }
+#index-right #freee td { text-align: center; }
+#index-right #freee h4 { font-weight: bold; font-size: 2em; padding-top: 3px; padding-bottom: 3px; }
+#index-right #freee .freee-link { text-align: left; }
+
+.one-goal { padding-left: 40px; }
+
+.error-text { margin-top: 44px; font-color: red; }
+
+#footer { display: inline; float: left; margin-right: 0; width: 950px; margin-top: 6px; margin-bottom: 6px; font-size: .8em; }
+* html #footer { overflow-x: hidden; }
+#footer #contacto { display: inline; float: left; margin-right: 10px; width: 310px; }
+* html #footer #contacto { overflow-x: hidden; }
+#footer #contacto a { padding-left: 10px; }
+#footer #legalese { display: inline; float: left; margin-right: 10px; width: 310px; text-align: center; }
+* html #footer #legalese { overflow-x: hidden; }
+#footer #subscribe { display: inline; float: left; margin-right: 0; width: 310px; text-align: right; }
+* html #footer #subscribe { overflow-x: hidden; }
+#footer #subscribe span { padding-right: 10px; }
