@@ -4,6 +4,17 @@
 - poll
 - quitters form
 - links
+    http://tongodeon.livejournal.com/890323.html
+    http://online.wsj.com/article/SB10001424052748704655004575113872190094934.html
+    http://ihateboa.com/
+    http://lifetussle.wordpress.com/2008/01/07/i-hate-bank-of-america-you-should-too/
+    http://www.smokeandashes.net/2003/11/i_hate_bank_of_.html    
+
 - main text (from txt file)
 - layout/logo
-- schwag
+- T-shirts
+
+
+- layout:
+    blueprint grid
+    yui fonts

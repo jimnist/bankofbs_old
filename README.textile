@@ -1,0 +1,10 @@
+putting Bank of America out of business, one ex-customer at a time.
+
+.h1 fight the power
+
+this site is served up by with "jekyll":http://github.com/mojombo/jekyll and "compass":http://compass-style.org/
+
+
+everything on this site is copyright 2010, so don't feel free to use it without permission.
+
+

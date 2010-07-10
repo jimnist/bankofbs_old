@@ -1,10 +1,12 @@
 // This import applies a global reset to any page that imports this stylesheet.
 // To configure blueprint, edit the partials/_base.sass file.
 @import partials/_base.sass
-@import yui/modules/fonts.sass
 @import blueprint/screen.sass
-@import blueprint/modules/scaffolding.sass
+@import blueprint/grid.sass
+@import blueprint/debug.sass
+//@import blueprint/modules/scaffolding.sass
 @import blueprint/modules/form.sass
+@import yui/modules/fonts.sass
 @import compass/reset.sass
 @import compass/utilities.sass
 
@@ -15,8 +17,8 @@
 body#default
   :background-color #ffc
   :font-family Verdana, Arial, sans-serif
-  :font-size 14px
-  :line-height 18px
+//  :font-size 14px
+//  :line-height 18px
   a
     :text-decoration none
     &:hover
@@ -101,7 +103,7 @@ body#default
   #freee
     :border 1px solid #ccc
     :padding 4px
-    :font-size .8em
+ //   :font-size .8em
     td
       :text-align center
     h4
@@ -113,6 +115,7 @@ body#default
       :text-align left
 .one-goal
   +prepend(1)
+  :list-style-type circle
 .error-text
   :margin-top 44px
   :font-color red

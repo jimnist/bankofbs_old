@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!--<link rel="alternate" type="application/atom+xml" title="Recent Entries"-->
+    <!--href="http://feeds.feedburner.com/bankofbs"/>-->
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 8]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
+</head>
+
+<body id="default" class="blueprint">
+<div class="container">
+    <div id="header">
+        <div class="foreclosed">
+            <a href="/index.html"><img alt="home" src="/images/home.png"></a>
+        </div>
+        <div class="message">
+            &nbsp;
+        </div>
+        <div class="logo">
+            &nbsp;
+            <a href="/index.html"><img class="header-logo" alt="BANKofBS" src="/images/header.png"></a>
+        </div>
+        <div class="quote">
+            &nbsp;
+        </div>
+        <div class="sucks">
+            <img src="/images/sucks.png" alt="this bank sucks"/>
+        </div>
+    </div>
+    <div id="content">
+
+        {{ content }}
+
+    </div>
+
+    <div id="footer">
+        <div id="contacto"><a href="mailto:fatkat@bankofbs.com">contact</a></div>
+        <div id="legalese">&copy; 2010</div>
+        <div id="subscribe">
+            <span>
+                <a href="http://feeds.feedburner.com/bankofbs">
+                    subscribe &nbsp;<img src="/images/rss.gif" alt="subscribe to RSS feed"/>
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-15274307-1");
+        pageTracker._setDomainName(".bankofbs.com");
+        pageTracker._trackPageview();
+    } catch(err) {
+    }</script>
+
+</body>
+</html>

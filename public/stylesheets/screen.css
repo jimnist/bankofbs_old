@@ -76,7 +76,7 @@ body#default a:hover { color: #00f; font-style: bolder; }
 #index-right #freee h4 { font-weight: bold; font-size: 2em; padding-top: 3px; padding-bottom: 3px; }
 #index-right #freee .freee-link { text-align: left; }
 
-.one-goal { padding-left: 40px; }
+.one-goal { padding-left: 40px; list-style-type: circle; }
 
 .error-text { margin-top: 44px; font-color: red; }
 
